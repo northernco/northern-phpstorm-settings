@@ -1,15 +1,8 @@
-<code_scheme name="Northern Spaces - PHP7">
+<code_scheme name="Northern Spaces - PHP7" version="173">
     <option name="AUTODETECT_INDENTS" value="false" />
     <option name="OTHER_INDENT_OPTIONS">
         <value>
-            <option name="INDENT_SIZE" value="4" />
             <option name="CONTINUATION_INDENT_SIZE" value="4" />
-            <option name="TAB_SIZE" value="4" />
-            <option name="USE_TAB_CHARACTER" value="false" />
-            <option name="SMART_TABS" value="false" />
-            <option name="LABEL_INDENT_SIZE" value="0" />
-            <option name="LABEL_INDENT_ABSOLUTE" value="false" />
-            <option name="USE_RELATIVE_INDENTS" value="false" />
         </value>
     </option>
     <option name="LINE_SEPARATOR" value="&#xA;" />
@@ -24,12 +17,20 @@
     <CssCodeStyleSettings>
         <option name="HEX_COLOR_LOWER_CASE" value="true" />
         <option name="HEX_COLOR_LONG_FORMAT" value="true" />
-        <option name="KEEP_SINGLE_LINE_BLOCKS" value="true" />
     </CssCodeStyleSettings>
-    <JSCodeStyleSettings>
+    <HTMLCodeStyleSettings>
+        <option name="HTML_ATTRIBUTE_WRAP" value="0" />
+        <option name="HTML_TEXT_WRAP" value="0" />
+        <option name="HTML_KEEP_BLANK_LINES" value="1" />
+        <option name="HTML_SPACE_INSIDE_EMPTY_TAG" value="true" />
+        <option name="HTML_DO_NOT_INDENT_CHILDREN_OF" value="" />
+        <option name="HTML_DO_NOT_ALIGN_CHILDREN_OF_MIN_LINES" value="9000" />
+        <option name="HTML_KEEP_WHITESPACES_INSIDE" value="pre,textarea" />
+    </HTMLCodeStyleSettings>
+    <JSCodeStyleSettings version="0">
         <option name="FORCE_SEMICOLON_STYLE" value="true" />
         <option name="ALIGN_OBJECT_PROPERTIES" value="2" />
-        <option name="ALIGN_MULTIPLE_ASSIGNMENTS" value="true" />
+        <option name="ALIGN_VAR_STATEMENTS" value="2" />
         <option name="USE_DOUBLE_QUOTES" value="false" />
         <option name="FORCE_QUOTE_STYlE" value="true" />
         <option name="ENFORCE_TRAILING_COMMA" value="Remove" />
@@ -45,14 +46,14 @@
         <option name="ALIGN_ASSIGNMENTS" value="true" />
         <option name="PHPDOC_BLANK_LINE_BEFORE_TAGS" value="true" />
         <option name="PHPDOC_BLANK_LINES_AROUND_PARAMETERS" value="true" />
-        <option name="PHPDOC_THROWS_CALL_TREE_ANALYSIS_DEPTH" value="1" />
         <option name="LOWER_CASE_BOOLEAN_CONST" value="true" />
         <option name="LOWER_CASE_NULL_CONST" value="true" />
-        <option name="ELSE_IF_STYLE" value="SEPARATE" />
+        <option name="ELSE_IF_STYLE" value="COMBINE" />
         <option name="VARIABLE_NAMING_STYLE" value="CAMEL_CASE" />
-        <option name="BLANK_LINE_BEFORE_RETURN_STATEMENT" value="true" />
+        <option name="BLANK_LINES_BEFORE_RETURN_STATEMENT" value="1" />
         <option name="KEEP_RPAREN_AND_LBRACE_ON_ONE_LINE" value="true" />
         <option name="ALIGN_CLASS_CONSTANTS" value="true" />
+        <option name="KEEP_BLANK_LINES_AFTER_LBRACE" value="1" />
         <option name="SPACE_BETWEEN_TERNARY_QUEST_AND_COLON" value="true" />
         <option name="FORCE_SHORT_DECLARATION_ARRAY_STYLE" value="true" />
         <option name="SPACE_AROUND_ASSIGNMENT_IN_DECLARE" value="true" />
@@ -136,7 +137,6 @@
         <option name="KEEP_BLANK_LINES_BEFORE_RBRACE" value="0" />
         <option name="BLANK_LINES_BEFORE_PACKAGE" value="0" />
         <option name="BLANK_LINES_AFTER_PACKAGE" value="1" />
-        <option name="BLANK_LINES_AROUND_CLASS" value="0" />
         <option name="BLANK_LINES_AROUND_FIELD" value="1" />
         <option name="CLASS_BRACE_STYLE" value="1" />
         <option name="METHOD_BRACE_STYLE" value="1" />
@@ -173,12 +173,6 @@
         <indentOptions>
             <option name="INDENT_SIZE" value="4" />
             <option name="CONTINUATION_INDENT_SIZE" value="4" />
-        </indentOptions>
-    </codeStyleSettings>
-    <codeStyleSettings language="SQL">
-        <indentOptions>
-            <option name="INDENT_SIZE" value="4" />
-            <option name="TAB_SIZE" value="4" />
         </indentOptions>
     </codeStyleSettings>
     <codeStyleSettings language="Twig">
