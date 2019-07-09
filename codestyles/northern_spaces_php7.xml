@@ -137,6 +137,7 @@
         <option name="KEEP_BLANK_LINES_BEFORE_RBRACE" value="0" />
         <option name="BLANK_LINES_BEFORE_PACKAGE" value="0" />
         <option name="BLANK_LINES_AFTER_PACKAGE" value="1" />
+        <option name="BLANK_LINES_AROUND_CLASS" value="0" />
         <option name="BLANK_LINES_AROUND_FIELD" value="1" />
         <option name="CLASS_BRACE_STYLE" value="1" />
         <option name="METHOD_BRACE_STYLE" value="1" />
