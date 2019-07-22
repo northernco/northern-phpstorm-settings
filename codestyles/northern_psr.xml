@@ -11,7 +11,7 @@
     <option name="HTML_TEXT_WRAP" value="0" />
     <option name="HTML_KEEP_BLANK_LINES" value="1" />
     <option name="HTML_SPACE_INSIDE_EMPTY_TAG" value="true" />
-    <option name="HTML_DO_NOT_INDENT_CHILDREN_OF" value="" />
+    <option name="HTML_DO_NOT_INDENT_CHILDREN_OF" value="script" />
     <option name="HTML_DO_NOT_ALIGN_CHILDREN_OF_MIN_LINES" value="9000" />
     <option name="HTML_KEEP_WHITESPACES_INSIDE" value="pre,textarea" />
     <CssCodeStyleSettings>
@@ -23,7 +23,7 @@
         <option name="HTML_TEXT_WRAP" value="0" />
         <option name="HTML_KEEP_BLANK_LINES" value="1" />
         <option name="HTML_SPACE_INSIDE_EMPTY_TAG" value="true" />
-        <option name="HTML_DO_NOT_INDENT_CHILDREN_OF" value="" />
+        <option name="HTML_DO_NOT_INDENT_CHILDREN_OF" value="script" />
         <option name="HTML_DO_NOT_ALIGN_CHILDREN_OF_MIN_LINES" value="9000" />
         <option name="HTML_KEEP_WHITESPACES_INSIDE" value="pre,textarea" />
     </HTMLCodeStyleSettings>
@@ -33,7 +33,6 @@
         <option name="ALIGN_VAR_STATEMENTS" value="2" />
         <option name="USE_DOUBLE_QUOTES" value="false" />
         <option name="FORCE_QUOTE_STYlE" value="true" />
-        <option name="ENFORCE_TRAILING_COMMA" value="Remove" />
         <option name="VAR_DECLARATION_WRAP" value="0" />
         <option name="OBJECT_LITERAL_WRAP" value="0" />
         <option name="IMPORTS_WRAP" value="0" />
