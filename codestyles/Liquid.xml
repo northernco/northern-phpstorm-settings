@@ -1,5 +1,5 @@
 <templateSet group="Liquid">
-    <template name="comment" value="{% comment %}&#10;$comment$&#10;{% endcomment %}" description="{% comment %} ... {% endcomment %}" toReformat="true" toShortenFQNames="true">
+    <template name="comment" value="{% comment %}&#10;$comment$&#10;{% endcomment %}" description="{% comment %} ... {% endcomment %}" toReformat="false" toShortenFQNames="true">
         <variable name="comment" expression="" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="Twig" value="true" />
@@ -124,9 +124,10 @@
             <option name="Twig" value="true" />
         </context>
     </template>
-    <template name="tableRow" value="&lt;table&gt;&#10;  {% tablerow $product$ in $collection$ %}&#10;    {{ $product$ }}&#10;  {% endtablerow %}&#10;&lt;/table&gt;" description="&lt;table&gt;   {% tablerow $product$ in $collection$ %}  ...  {% endtablerow %} &lt;/table&gt;" toReformat="false" toShortenFQNames="true">
+    <template name="tableRow" value="&lt;table&gt;&#10;  {% tablerow $product$ in $collection$ %}&#10;    {{ $product$.$var$ }}&#10;  {% endtablerow %}&#10;&lt;/table&gt;" description="&lt;table&gt;   {% tablerow $product$ in $collection$ %}  ...  {% endtablerow %} &lt;/table&gt;" toReformat="false" toShortenFQNames="true">
         <variable name="product" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="collection" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="Twig" value="true" />
         </context>
@@ -164,6 +165,41 @@
         </context>
     </template>
     <template name="or" value="{% or %}" description="{% or %}" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="Twig" value="true" />
+        </context>
+    </template>
+    <template name="blocks" value="&quot;blocks&quot;: [&#10;        {&#10;            &quot;type&quot;: &quot;$logo_image$&quot;,&#10;            &quot;name&quot;: &quot;$Logo$&quot;,&#10;            &quot;settings&quot;: [&#10;                {&#10;                    &quot;type&quot;: &quot;$image_picker$&quot;,&#10;                    &quot;id&quot;: &quot;$image$&quot;,&#10;                    &quot;label&quot;: &quot;$Image$&quot;&#10;                }&#10;            ]&#10;        }&#10;    ]," description="&quot;blocks&quot;: [         {             &quot;type&quot;: &quot;$logo_image$&quot;,             &quot;name&quot;: &quot;$Logo$&quot;,             &quot;settings&quot;: [                 {                     &quot;type&quot;: &quot;$image_picker$&quot;,                     &quot;id&quot;: &quot;$image$&quot;,                     &quot;label&quot;: &quot;$Image$&quot;                 }             ]         }     ]," toReformat="false" toShortenFQNames="true">
+        <variable name="logo_image" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="Logo" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="image_picker" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="image" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="Image" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="Twig" value="true" />
+        </context>
+    </template>
+    <template name="schemaFull" value="{% schema %}&#10;{&#10;    &quot;name&quot;: &quot;$var$&quot;,&#10;    &quot;settings&quot;: [&#10;        {&#10;            &quot;id&quot;: &quot;$var$&quot;,&#10;            &quot;type&quot;: &quot;$var$&quot;,&#10;            &quot;label&quot;: &quot;$var$&quot;,&#10;            &quot;default&quot;: &quot;$var$&quot;&#10;        }&#10;    ],&#10;    &quot;blocks&quot;: [&#10;        {&#10;            &quot;type&quot;: &quot;$logo_image$&quot;,&#10;            &quot;name&quot;: &quot;$Logo$&quot;,&#10;            &quot;settings&quot;: [&#10;                {&#10;                    &quot;type&quot;: &quot;$url$&quot;,&#10;                    &quot;id&quot;: &quot;$link$&quot;,&#10;                    &quot;label&quot;: &quot;$Link$&quot;,&#10;                    &quot;info&quot;: &quot;$Optional$&quot;&#10;                }&#10;            ]&#10;        }&#10;    ],&#10;    &quot;presets&quot;: [&#10;        {&#10;            &quot;name&quot;: &quot;$Logolist$&quot;,&#10;            &quot;category&quot;: &quot;$Image$&quot;,&#10;            &quot;blocks&quot;: [&#10;                {&#10;                    &quot;type&quot;: &quot;$url$&quot;,&#10;                    &quot;id&quot;: &quot;$link$&quot;,&#10;                    &quot;label&quot;: &quot;$Link$&quot;,&#10;                    &quot;info&quot;: &quot;$Optional$&quot;&#10;                }&#10;            ]&#10;        }&#10;    ]&#10;}&#10;{% endschema %}" description="{{% schema *with blocks and presets*" toReformat="false" toShortenFQNames="true">
+        <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="logo_image" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="Logo" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="link" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="Link" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="Optional" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="Logolist" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="Image" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="Twig" value="true" />
+        </context>
+    </template>
+    <template name="case" value="{% case $handle$ %}&#10;  {% when '$cake$' %}&#10;     $content$&#10;  {% when '$cookie$' %}&#10;     $var$&#10;  {% else %}&#10;     $elseContent$&#10;{% endcase %}" description="{% case %} / {% when %}" toReformat="false" toShortenFQNames="true">
+        <variable name="handle" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="cake" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="cookie" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="elseContent" expression="" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="Twig" value="true" />
         </context>
