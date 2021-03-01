@@ -7,13 +7,6 @@
     </option>
     <option name="LINE_SEPARATOR" value="&#xA;" />
     <option name="RIGHT_MARGIN" value="200" />
-    <option name="HTML_ATTRIBUTE_WRAP" value="0" />
-    <option name="HTML_TEXT_WRAP" value="0" />
-    <option name="HTML_KEEP_BLANK_LINES" value="1" />
-    <option name="HTML_SPACE_INSIDE_EMPTY_TAG" value="true" />
-    <option name="HTML_DO_NOT_INDENT_CHILDREN_OF" value="script" />
-    <option name="HTML_DO_NOT_ALIGN_CHILDREN_OF_MIN_LINES" value="9000" />
-    <option name="HTML_KEEP_WHITESPACES_INSIDE" value="pre,textarea" />
     <CssCodeStyleSettings>
         <option name="HEX_COLOR_LOWER_CASE" value="true" />
         <option name="HEX_COLOR_LONG_FORMAT" value="true" />
@@ -46,6 +39,7 @@
         <option name="COMMA_AFTER_LAST_ARRAY_ELEMENT" value="true" />
         <option name="PHPDOC_BLANK_LINE_BEFORE_TAGS" value="true" />
         <option name="PHPDOC_BLANK_LINES_AROUND_PARAMETERS" value="true" />
+        <option name="BLANK_LINES_BETWEEN_IMPORTS" value="1" />
         <option name="LOWER_CASE_BOOLEAN_CONST" value="true" />
         <option name="LOWER_CASE_NULL_CONST" value="true" />
         <option name="ELSE_IF_STYLE" value="COMBINE" />
@@ -53,10 +47,11 @@
         <option name="BLANK_LINES_BEFORE_RETURN_STATEMENT" value="1" />
         <option name="KEEP_RPAREN_AND_LBRACE_ON_ONE_LINE" value="true" />
         <option name="ALIGN_CLASS_CONSTANTS" value="true" />
-        <option name="KEEP_BLANK_LINES_AFTER_LBRACE" value="1" />
+        <option name="BLANK_LINES_AFTER_OPENING_TAG" value="1" />
+        <option name="KEEP_BLANK_LINES_AFTER_LBRACE" value="0" />
         <option name="SPACE_BETWEEN_TERNARY_QUEST_AND_COLON" value="true" />
         <option name="FORCE_SHORT_DECLARATION_ARRAY_STYLE" value="true" />
-        <option name="SPACE_AROUND_ASSIGNMENT_IN_DECLARE" value="true" />
+        <option name="NEW_LINE_AFTER_PHP_OPENING_TAG" value="true" />
         <option name="PHPDOC_USE_FQCN" value="true" />
         <option name="PLACE_PARENS_FOR_CONSTRUCTOR" value="1" />
     </PHPCodeStyleSettings>
@@ -142,13 +137,17 @@
         <option name="SPECIAL_ELSE_IF_TREATMENT" value="true" />
         <option name="ALIGN_MULTILINE_CHAINED_METHODS" value="true" />
         <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
+        <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true" />
         <option name="ALIGN_MULTILINE_BINARY_OPERATION" value="true" />
         <option name="ALIGN_MULTILINE_EXTENDS_LIST" value="true" />
         <option name="ALIGN_MULTILINE_ARRAY_INITIALIZER_EXPRESSION" value="true" />
-        <option name="CALL_PARAMETERS_WRAP" value="1" />
+        <option name="CALL_PARAMETERS_WRAP" value="5" />
+        <option name="CALL_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
+        <option name="CALL_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
         <option name="METHOD_PARAMETERS_WRAP" value="5" />
         <option name="METHOD_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
         <option name="METHOD_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
+        <option name="EXTENDS_LIST_WRAP" value="5" />
         <option name="PARENTHESES_EXPRESSION_LPAREN_WRAP" value="true" />
         <option name="PARENTHESES_EXPRESSION_RPAREN_WRAP" value="true" />
         <option name="FOR_STATEMENT_LPAREN_ON_NEXT_LINE" value="true" />
@@ -178,12 +177,20 @@
             <option name="CONTINUATION_INDENT_SIZE" value="4" />
         </indentOptions>
     </codeStyleSettings>
+    <codeStyleSettings language="Vue">
+        <indentOptions>
+            <option name="INDENT_SIZE" value="4" />
+            <option name="TAB_SIZE" value="4" />
+        </indentOptions>
+    </codeStyleSettings>
     <codeStyleSettings language="XML">
         <indentOptions>
             <option name="CONTINUATION_INDENT_SIZE" value="4" />
         </indentOptions>
     </codeStyleSettings>
     <codeStyleSettings language="yaml">
+        <option name="SPACE_WITHIN_BRACKETS" value="false" />
+        <option name="SPACE_WITHIN_BRACES" value="false" />
         <indentOptions>
             <option name="INDENT_SIZE" value="4" />
         </indentOptions>
