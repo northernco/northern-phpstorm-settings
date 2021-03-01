@@ -23,6 +23,6 @@ You should now be able to select a code style scheme by doing the following:
 Unfortunately not all settings can be imported using the Settings Repository tool. 
 
 Please set the following settings below using `File -> Settings`:
-- `Editor -> General` check `Ensure line feed at file end on Save` below the `Other` heading
-- `Editor -> General -> Auto Import` uncheck both `Enable auto-import in file scope` and `Enable auto-import in namespace scope` below the `PHP` heading
+- `Editor -> General` below the `On Save` heading, check `Ensure every saved file ends with a line break` and `Remove trailing blank lines at the end of saved files`
+- `Editor -> General -> Auto Import` below the `PHP` heading, uncheck both `Enable auto-import in file scope` and `Enable auto-import in namespace scope`
 - `Editor -> Inspections` navigate to `PHP -> Code Style -> Fully qualified name usage` and change `Severity` to `No highlighting, only fix`
