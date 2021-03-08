@@ -35,12 +35,22 @@
     <PHPCodeStyleSettings>
         <option name="COMMA_AFTER_LAST_ARRAY_ELEMENT" value="true" />
         <option name="PHPDOC_BLANK_LINE_BEFORE_TAGS" value="true" />
+        <option name="PHPDOC_BLANK_LINES_AROUND_PARAMETERS" value="true" />
+        <option name="PHPDOC_WRAP_LONG_LINES" value="true" />
+        <option name="THROWS_WEIGHT" value="3" />
+        <option name="PARAM_WEIGHT" value="1" />
+        <option name="RETURN_WEIGHT" value="2" />
+        <option name="DEPRECATED_WEIGHT" value="4" />
+        <option name="SEE_WEIGHT" value="5" />
+        <option name="TODO_WEIGHT" value="6" />
+        <option name="VAR_WEIGHT" value="0" />
         <option name="UPPER_CASE_BOOLEAN_CONST" value="true" />
         <option name="UPPER_CASE_NULL_CONST" value="true" />
         <option name="ELSE_IF_STYLE" value="COMBINE" />
         <option name="VARIABLE_NAMING_STYLE" value="CAMEL_CASE" />
         <option name="BLANK_LINES_BEFORE_RETURN_STATEMENT" value="1" />
         <option name="KEEP_RPAREN_AND_LBRACE_ON_ONE_LINE" value="true" />
+        <option name="BLANK_LINES_AROUND_CONSTANTS" value="1" />
         <option name="BLANK_LINES_AFTER_OPENING_TAG" value="1" />
         <option name="KEEP_BLANK_LINES_AFTER_LBRACE" value="1" />
         <option name="SPACE_BETWEEN_TERNARY_QUEST_AND_COLON" value="true" />
@@ -117,8 +127,10 @@
         </indentOptions>
     </codeStyleSettings>
     <codeStyleSettings language="PHP">
+        <option name="RIGHT_MARGIN" value="80" />
         <option name="LINE_COMMENT_AT_FIRST_COLUMN" value="false" />
         <option name="LINE_COMMENT_ADD_SPACE" value="true" />
+        <option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
         <option name="KEEP_CONTROL_STATEMENT_IN_ONE_LINE" value="false" />
         <option name="KEEP_BLANK_LINES_IN_DECLARATIONS" value="1" />
         <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
@@ -141,6 +153,7 @@
         <option name="METHOD_PARAMETERS_WRAP" value="5" />
         <option name="METHOD_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
         <option name="METHOD_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
+        <option name="METHOD_CALL_CHAIN_WRAP" value="5" />
         <option name="PARENTHESES_EXPRESSION_LPAREN_WRAP" value="true" />
         <option name="PARENTHESES_EXPRESSION_RPAREN_WRAP" value="true" />
         <option name="FOR_STATEMENT_LPAREN_ON_NEXT_LINE" value="true" />

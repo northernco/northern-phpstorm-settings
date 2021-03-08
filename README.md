@@ -26,3 +26,8 @@ Please set the following settings below using `File -> Settings` (or `PhpStorm -
 - `Editor -> General` below the `On Save` heading, check `Ensure every saved file ends with a line break` and `Remove trailing blank lines at the end of saved files`
 - `Editor -> General -> Auto Import` below the `PHP` heading, uncheck both `Enable auto-import in file scope` and `Enable auto-import in namespace scope`
 - `Editor -> Inspections` navigate to `PHP -> Code Style -> Fully qualified name usage` and change `Severity` to `No highlighting, only fix`
+
+## Drupal Notes
+
+PhpStorm will automatically change the code styles if it detects that the project is on Drupal.
+After setting up the project in PhpStorm, please double check that the `Northern Drupal` code styles are being used.
