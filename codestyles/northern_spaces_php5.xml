@@ -38,6 +38,7 @@
         <option name="VAR_DECLARATION_WRAP" value="0" />
         <option name="OBJECT_LITERAL_WRAP" value="0" />
         <option name="IMPORTS_WRAP" value="0" />
+        <option name="SPACES_WITHIN_IMPORTS" value="true" />
         <option name="USE_CHAINED_CALLS_GROUP_INDENTS" value="true" />
     </JSCodeStyleSettings>
     <PHPCodeStyleSettings>
@@ -194,7 +195,7 @@
     </codeStyleSettings>
     <codeStyleSettings language="yaml">
         <indentOptions>
-            <option name="INDENT_SIZE" value="4" />
+            <option name="INDENT_SIZE" value="2" />
         </indentOptions>
     </codeStyleSettings>
 </code_scheme>

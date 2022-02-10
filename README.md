@@ -26,6 +26,7 @@ Please set the following settings below using `File -> Settings` (or `PhpStorm -
 - `Editor -> General` below the `On Save` heading, check `Ensure every saved file ends with a line break` and `Remove trailing blank lines at the end of saved files`
 - `Editor -> General -> Auto Import` below the `PHP` heading, uncheck both `Enable auto-import in file scope` and `Enable auto-import in namespace scope`
 - `Editor -> Inspections` navigate to `PHP -> Code Style -> Fully qualified name usage` and change `Severity` to `No highlighting, only fix`
+- `Editor -> File Types` select `PHP` and add `*.theme` as a file name pattern
 
 ## Drupal Notes
 
