@@ -193,7 +193,7 @@
         <option name="SPACE_WITHIN_BRACKETS" value="false" />
         <option name="SPACE_WITHIN_BRACES" value="false" />
         <indentOptions>
-            <option name="INDENT_SIZE" value="4" />
+            <option name="INDENT_SIZE" value="2" />
         </indentOptions>
     </codeStyleSettings>
 </code_scheme>
