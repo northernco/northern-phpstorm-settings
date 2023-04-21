@@ -5,6 +5,7 @@
 Steps to import PhpStorm Code Style Schemes:
 
 - From the main menu: `File -> Settings` (or `PhpStorm -> Preferences` on macOS)
+> *Note:* For PhpStorm versions newer than 2022.3, the settings path will be `File > Manage IDE Settings > Settings Repository`
 - Navigate to: `Tools -> Settings Repository`
 - Click on the plus button in the `Read-only Sources` section
 - Paste `https://github.com/northernco/northern-phpstorm-settings.git` into the URL input and click `OK`
