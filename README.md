@@ -4,26 +4,24 @@
 
 Steps to import PhpStorm Code Style Schemes:
 
-- From the main menu: `File -> Settings` (or `PhpStorm -> Preferences` on macOS)
-> *Note:* For PhpStorm versions newer than 2022.3, the settings path will be `File > Manage IDE Settings > Settings Repository`
-- Navigate to: `Tools -> Settings Repository`
-- Click on the plus button in the `Read-only Sources` section
-- Paste `https://github.com/northernco/northern-phpstorm-settings.git` into the URL input and click `OK`
-- Click `Apply` then `OK`
+- From the main menu: `File > Manage IDE Settings > Settings Repository`
+> *Note:* For older PhpStorm versions, this may be under `File -> Settings > Tools -> Settings Repository`
+- Paste `https://github.com/northernco/northern-phpstorm-settings.git` as the Upstream URL and click `Overwrite Local`
+- You may need a [GitHub Personal Access Token](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token) if it prompts you for one.
 - Restart PhpStorm
 
 You should now be able to select a code style scheme by doing the following:
 
-- From the main menu: `File -> Settings` (or `PhpStorm -> Preferences` on macOS)
+- From the main menu: `File -> Settings`
 - Navigate to: `Editor -> Code Style`
 - Open the `Scheme` dropdown
-- The list should include Northern code styles
+- The list should now include Northern code styles
 
 ## Extra Settings
 
 Unfortunately not all settings can be imported using the Settings Repository tool. 
 
-Please set the following settings below using `File -> Settings` (or `PhpStorm -> Preferences` on macOS):
+Please set the following settings below using `File -> Settings`:
 - `Editor -> General` below the `On Save` heading, check `Ensure every saved file ends with a line break` and `Remove trailing blank lines at the end of saved files`
 - `Editor -> General -> Auto Import` below the `PHP` heading, uncheck both `Enable auto-import in file scope` and `Enable auto-import in namespace scope`
 - `Editor -> Inspections` navigate to `PHP -> Code Style -> Fully qualified name usage` and change `Severity` to `No highlighting, only fix`
